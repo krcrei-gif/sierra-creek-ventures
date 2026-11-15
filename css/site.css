@@ -201,3 +201,8 @@ p.areas { margin: 0; padding: 18px 0 24px; border-top: 1px solid rgba(255,255,25
 
 .wordmark img { display: block; height: 20px; width: auto; }
 .topbar { align-items: center; }
+
+.prose.post h3 { font-size: 1.6rem; line-height: 1.2; margin-top: 18px; }
+.prose.post figure { margin: 8px 0 0; }
+.prose.post figure img { width: 100%; border-radius: 2px; }
+.prose.post figcaption { font-size: 0.9rem; color: var(--moss); margin-top: 6px; }
