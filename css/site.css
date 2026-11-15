@@ -198,3 +198,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .band > h2 .kind { display: block; margin-top: 6px; font-weight: 400; font-size: 0.86rem; color: var(--creek); }
 p.areas { margin: 0; padding: 18px 0 24px; border-top: 1px solid rgba(255,255,255,0.18); color: #cfdad5; font-size: 0.98rem; max-width: none; }
+
+.wordmark img { display: block; height: 20px; width: auto; }
+.topbar { align-items: center; }
