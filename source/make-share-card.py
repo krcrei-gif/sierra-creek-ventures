@@ -23,11 +23,11 @@ def card(photo, title, out, plain=False):
         block=len(lines)*68+56
         ov=Image.new('RGBA',(W,H),(0,0,0,0)); od=ImageDraw.Draw(ov); start=H-block-170
         for y in range(max(start,0),H):
-            a=int(225*min(1,((y-start)/(H-start))**1.15)); od.line([(0,y),(W,y)],fill=(14,28,23,a))
+            a=int(225*min(1,((y-start)/(H-start))**1.15)); od.line([(0,y),(W,y)],fill=(16,30,42,a))
         im=Image.alpha_composite(im,ov); d=ImageDraw.Draw(im)
         y=H-block-18
         for ln in lines: d.text((70,y),ln,font=f,fill=(255,255,255,255)); y+=68
-        d.text((72,y+8),'Sierra Creek Ventures',font=small,fill=(207,218,213,255))
+        d.text((72,y+8),'Sierra Creek Ventures',font=small,fill=(212,219,225,255))
     im.convert('RGB').save(out,quality=86,optimize=True,progressive=True)
 if __name__=='__main__':
     a=[x for x in sys.argv[1:] if x!='--plain']; card(a[0],a[1],a[2],'--plain' in sys.argv)

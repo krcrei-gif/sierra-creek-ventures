@@ -28,14 +28,14 @@
       }
       var major = i % 5 === 0;
       ctx.lineWidth = major ? 1.1 : 0.7;
-      ctx.strokeStyle = major ? 'rgba(159,208,204,0.30)' : 'rgba(159,208,204,0.13)';
+      ctx.strokeStyle = major ? 'rgba(217,201,163,0.30)' : 'rgba(217,201,163,0.13)';
       ctx.stroke();
     }
     // fade the left so the headline stays clean
     var g = ctx.createLinearGradient(0, 0, w, 0);
-    g.addColorStop(0, 'rgba(20,37,31,0.92)');
-    g.addColorStop(0.55, 'rgba(20,37,31,0.35)');
-    g.addColorStop(1, 'rgba(20,37,31,0)');
+    g.addColorStop(0, 'rgba(31,58,77,0.92)');
+    g.addColorStop(0.55, 'rgba(31,58,77,0.35)');
+    g.addColorStop(1, 'rgba(31,58,77,0)');
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, w, h);
   }
